@@ -25,24 +25,23 @@
         }
 
         body {
-            padding: 6rem 4rem 10rem;
+            padding: 4rem 4rem 10rem;
             line-height: 1.7;
-            font-family: "Nunito Sans", sans-serif;
+            font-family: 'Oswald', sans-serif;
             color: #555;
             min-height: 100vh;
-            background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+            background: linear-gradient(to bottom right, #24252a, #1f3a93);
         }
 
         h1 {
-            font-family: "Bungee Inline", sans-serif;
             font-weight: 400;
             font-size: 6rem;
             color: white;
-            transform: skewY(-5deg);
             margin-bottom: 6rem;
             text-align: center;
             position: relative;
             word-spacing: 3px;
+            font-family: 'Oswald', sans-serif;
         }
 
         h1::before {
@@ -52,11 +51,11 @@
             width: 58%;
             position: absolute;
             top: 105%;
-            left: 50%;
-            background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+            left: 21%;
+            background: linear-gradient(to bottom, #24252a, #1f3a93);
             opacity: .8;
             z-index: -1;
-            transform: skewY(370deg) translate(-50%, -50%);
+    
         }
 
         .container {
@@ -68,15 +67,18 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 6rem;
+
         }
 
         .card {
             background: white;
             box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.25);
+            border-radius: 15%;
         }
 
         .card__hero {
             position: relative;
+
         }
 
         .card__hero::before {
@@ -87,7 +89,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-image: linear-gradient(to right bottom, #67b26f, #4ca2cd);
+            background-image: linear-gradient(to right bottom, #24252a, #1f3a93);
             opacity: .3;
         }
 
@@ -97,7 +99,7 @@
         }
 
         .card__name {
-            background: linear-gradient(to right, #67b26f, #4ca2cd);
+            background: linear-gradient(to right, #24252a, #1f3a93);
             padding: 1.3rem .8rem;
             font-family: "Bungee Inline", sans-serif;
             font-weight: 400;
@@ -132,12 +134,13 @@
             font-size: 1.8rem;
             font-weight: 700;
             text-align: center;
+            border-radius: 5%;
         }
 
         .card__link:link,
         .card__link:visited {
             flex: 0 0 50%;
-            background-color: #5aaa9d;
+            background-color: #24252a;
             color: white;
             font-size: 1.4rem;
             font-weight: 700;
@@ -149,11 +152,12 @@
             align-items: center;
             justify-content: center;
             transition: all .3s;
+            border-radius: 5%;
         }
 
         .card__link:hover,
         .card__link:active {
-            background-color: #67b26f;
+            background-color: #1f3a93;
         }
 
         .emoji-left {
